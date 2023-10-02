@@ -19,6 +19,12 @@
 
 namespace CommunityConfigurationExample;
 
+use JsonContent;
+use MediaWiki\Extension\CommunityConfiguration\CommunityConfigurationServices;
+use MediaWiki\MediaWikiServices;
+use MediaWiki\Page\PageIdentity;
+use StatusValue;
+
 class Hooks implements \MediaWiki\Hook\BeforePageDisplayHook {
 
 	/**
@@ -31,6 +37,24 @@ class Hooks implements \MediaWiki\Hook\BeforePageDisplayHook {
 		if ( $config->get( 'BoilerPlateVandalizeEachPage' ) ) {
 			$out->addModules( 'oojs-ui-core' );
 			$out->addHTML( \Html::element( 'p', [], 'BoilerPlate was here' ) );
+		}
+	}
+
+	/**
+	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/JsonValidateSave
+	 * @param JsonContent $content
+	 * @param PageIdentity $pageIdentity
+	 */
+	public static function onJsonValidateSave( JsonContent $content, PageIdentity $pageIdentity, StatusValue $status ) {
+		$ccServices = CommunityConfigurationServices::wrap( MediaWikiServices::getInstance() );
+		// FIXME avoid constructing providers, index of wiki configs?
+		foreach ( $ccServices->getConfigurationProviderFactory()->getSupportedKeys() as $providerName ) {
+			$provider = $ccServices->getConfigurationProviderFactory()->newProvider( $providerName );
+			if ( strpos( $provider->getStore()->getConfigurationLocation(), $pageIdentity->getDBkey() ) ) {
+				$validator = $provider->getValidator();
+				$result = $validator->validate( (array)$content->getData()->getValue() );
+				$status->merge( $result );
+			}
 		}
 	}
 

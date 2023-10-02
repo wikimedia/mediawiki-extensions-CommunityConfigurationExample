@@ -38,12 +38,12 @@
 		}
 	},
 	"HookHandlers": {
-		"BoilerPlateHooks": {
+		"ValidationHooks": {
 			"class": "CommunityConfigurationExample\\Hooks"
 		}
 	},
 	"Hooks": {
-		"BeforePageDisplay": "BoilerPlateHooks"
+		"JsonValidateSave": "ValidationHooks"
 	},
 	"MessagesDirs": {
 		"CommunityConfigurationExample": [
