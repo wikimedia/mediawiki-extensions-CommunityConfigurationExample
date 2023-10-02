@@ -17,7 +17,7 @@
  * @file
  */
 
-namespace MediaWiki\Extension\BoilerPlate;
+namespace CommunityConfigurationExample;
 
 class Hooks implements \MediaWiki\Hook\BeforePageDisplayHook {
 

@@ -1,17 +1,17 @@
 {
-	"name": "BoilerPlate",
+	"name": "CommunityConfigurationExample",
 	"author": [
-		"Your Name"
+		"Sergio Gimeno"
 	],
-	"url": "https://www.mediawiki.org/wiki/Extension:BoilerPlate",
-	"descriptionmsg": "boilerplate-desc",
+	"url": "https://www.mediawiki.org/wiki/Extension:TBD",
+	"descriptionmsg": "communityconfigurationexample-desc",
 	"license-name": "GPL-2.0-or-later",
 	"type": "other",
 	"requires": {
 		"MediaWiki": ">= 1.35.0"
 	},
 	"AutoloadNamespaces": {
-		"MediaWiki\\Extension\\BoilerPlate\\": "src/"
+		"CommunityConfigurationExample\\": "src/"
 	},
 	"config": {
 		"BoilerPlateEnableFoo": {
@@ -25,14 +25,14 @@
 	},
 	"HookHandlers": {
 		"BoilerPlateHooks": {
-			"class": "MediaWiki\\Extension\\BoilerPlate\\Hooks"
+			"class": "CommunityConfigurationExample\\Hooks"
 		}
 	},
 	"Hooks": {
 		"BeforePageDisplay": "BoilerPlateHooks"
 	},
 	"MessagesDirs": {
-		"BoilerPlate": [
+		"CommunityConfigurationExample": [
 			"i18n"
 		]
 	},
@@ -46,6 +46,11 @@
 				"init.js"
 			],
 			"messages": []
+		}
+	},
+	"SpecialPages": {
+		"CommunityConfigurationExample": {
+			"class": "CommunityConfigurationExample\\Specials\\SpecialCCExample"
 		}
 	},
 	"manifest_version": 2

@@ -20,3 +20,10 @@ To take advantage of this automation.
 4. `composer install`
 
 Once set up, running `npm test` and `composer test` will run automated code checks.
+
+### Community Configuration Example
+
+The goal of this extension is to provide valid examples of usages of
+the Community Configuration extension. See: TODO add CC2.0 link(s)
+
+

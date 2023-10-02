@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Your Name"
+			"Sergio Gimeno"
 		]
 	},
-	"boilerplate-desc": "{{desc|name=Boilerplate|url=https://www.mediawiki.org/wiki/Extension:Boilerplate}}"
+	"communityconfigurationexample": "Extensions's title",
+	"communityconfigurationexample-desc": "{{desc|name=CommunityConfigurationExample|url=https://www.mediawiki.org/wiki/Extension:TBD}}"
 }

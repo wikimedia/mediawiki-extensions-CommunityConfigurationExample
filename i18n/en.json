@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Your Name"
+			"Sergio Gimeno"
 		]
 	},
-	"boilerplate-desc": "This is an example extension"
+	"communityconfigurationexample": "Community Configuration example",
+	"communityconfigurationexample-desc": "Example of usage of Community Configuration extension"
 }
