@@ -13,11 +13,25 @@
 	"AutoloadNamespaces": {
 		"CommunityConfigurationExample\\": "src/"
 	},
+	"CommunityConfigurationProviders": {
+		"FooBar": {
+			"storage": {
+				"type": "static",
+				"args": [
+					"MediaWiki:SpecialCCExampleConfig.json"
+				]
+			},
+			"validator": {
+				"type": "jsonschema",
+				"args": [
+					"CommunityConfigurationExample/src/Schemas/schema_draft-07.json"
+				]
+			},
+			"type": "MediaWiki\\Extension\\CommunityConfiguration\\Provider\\DataConfigurationProvider",
+			"services": []
+		}
+	},
 	"config": {
-		"BoilerPlateEnableFoo": {
-			"description": "Enable the Foo feature.",
-			"value": true
-		},
 		"BoilerPlateVandalizeEachPage": {
 			"description": "Write 'BoilerPlate was here' on each page",
 			"value": false
