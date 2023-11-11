@@ -50,6 +50,9 @@
 			"i18n"
 		]
 	},
+	"ExtensionMessagesFiles": {
+		"CommunityConfigurationExampleAlias": "CommunityConfigurationExample.alias.php"
+	},
 	"ResourceModules": {
 		"ext.boilerPlate": {
 			"localBasePath": "resources/ext.boilerPlate",
@@ -64,7 +67,7 @@
 	},
 	"SpecialPages": {
 		"CommunityConfigurationExample": {
-			"class": "CommunityConfigurationExample\\Specials\\SpecialCCExample"
+			"class": "CommunityConfigurationExample\\Specials\\SpecialCommunityConfigurationExample"
 		}
 	},
 	"manifest_version": 2

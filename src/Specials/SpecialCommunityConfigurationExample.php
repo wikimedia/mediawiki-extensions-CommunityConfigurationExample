@@ -3,13 +3,14 @@ namespace CommunityConfigurationExample\Specials;
 
 use MediaWiki\Extension\CommunityConfiguration\CommunityConfigurationServices;
 use MediaWiki\MediaWikiServices;
+use SpecialPage;
 
-class SpecialCCExample extends \SpecialPage {
-	function __construct() {
+class SpecialCommunityConfigurationExample extends SpecialPage {
+	public function __construct() {
 		parent::__construct( 'CommunityConfigurationExample' );
 	}
 
-	function execute( $par ) {
+	public function execute( $par ) {
 		$ccServices = CommunityConfigurationServices::wrap( MediaWikiServices::getInstance() );
 		$provider = $ccServices->getConfigurationProviderFactory()->newProvider( 'FooBar' );
 
