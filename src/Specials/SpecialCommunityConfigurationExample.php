@@ -20,7 +20,6 @@ class SpecialCommunityConfigurationExample extends SpecialPage {
 	}
 
 	/**
-	 *
 	 * @note WARNING: This is an ugly and insecure hack, introduced for the purposes of
 	 * demonstration. Do not use this elsewhere unless you know what you are doing.
 	 * @param string $color
