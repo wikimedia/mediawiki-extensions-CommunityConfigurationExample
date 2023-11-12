@@ -27,7 +27,7 @@
 					"CommunityConfigurationExample/src/Schemas/schema_draft-07.json"
 				]
 			},
-			"type": "data"
+			"type": "mw-config"
 		}
 	},
 	"config": {
@@ -68,9 +68,12 @@
 		"CommunityConfigurationExample": {
 			"class": "CommunityConfigurationExample\\Specials\\SpecialCommunityConfigurationExample",
 			"services": [
-				"CommunityConfiguration.ProviderFactory"
+				"CommunityConfigurationExample.WikiPageConfig"
 			]
 		}
 	},
+	"ServiceWiringFiles": [
+		"src/ServiceWiring.php"
+	],
 	"manifest_version": 2
 }

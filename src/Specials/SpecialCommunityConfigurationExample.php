@@ -1,6 +1,7 @@
 <?php
 namespace CommunityConfigurationExample\Specials;
 
+use CommunityConfigurationExample\Config\WikiPageConfig;
 use MediaWiki\Extension\CommunityConfiguration\CommunityConfigurationServices;
 use MediaWiki\Extension\CommunityConfiguration\Provider\ConfigurationProviderFactory;
 use MediaWiki\MediaWikiServices;
@@ -8,29 +9,34 @@ use SpecialPage;
 
 class SpecialCommunityConfigurationExample extends SpecialPage {
 
-	private ConfigurationProviderFactory $configurationProviderFactory;
+	private WikiPageConfig $wikiConfig;
 
 	public function __construct(
-		ConfigurationProviderFactory $configurationProviderFactory
+		WikiPageConfig $wikiConfig
 	) {
 		parent::__construct( 'CommunityConfigurationExample' );
 
-		$this->configurationProviderFactory = $configurationProviderFactory;
+		$this->wikiConfig = $wikiConfig;
+	}
+
+	/**
+	 *
+	 * @note WARNING: This is an ugly and insecure hack, introduced for the purposes of
+	 * demonstration. Do not use this elsewhere unless you know what you are doing.
+	 * @param string $color
+	 * @return void
+	 */
+	private function setBackgroundColor( string $color ): void {
+		$this->getOutput()->addInlineStyle(
+			'.mw-page-container { background-color: ' . $color . ' !important; }'
+		);
 	}
 
 	public function execute( $par ) {
+		// REVIEW: Page permissions --Sergio
 		parent::execute( $par );
 
-		$provider = $this->configurationProviderFactory->newProvider( 'FooBar' );
-
-		# TODO
-		// Read the current CC state, (validate it?)
-		// $provider->getStore()->loadConfigurationUncached();
-		// Render a form based on the schema and its state
-		// Allow users to update the value
-		// Validate and store the new value
-		// REVIEW: Page permissions
-
 		$this->getOutput()->addWikiTextAsInterface( 'Hello world!' );
+		$this->setBackgroundColor( $this->wikiConfig->get( 'CCExampleBackgroundColor' ) );
 	}
 }
