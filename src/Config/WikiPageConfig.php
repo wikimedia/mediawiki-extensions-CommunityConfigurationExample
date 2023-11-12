@@ -3,13 +3,13 @@
 namespace CommunityConfigurationExample\Config;
 
 use MediaWiki\Config\Config;
-use MediaWiki\Extension\CommunityConfiguration\Provider\KeyValueConfigurationProvider;
+use MediaWiki\Extension\CommunityConfiguration\Provider\WikiPageConfigProvider;
 
 class WikiPageConfig implements Config {
 
-	private KeyValueConfigurationProvider $provider;
+	private WikiPageConfigProvider $provider;
 
-	public function __construct( KeyValueConfigurationProvider $provider ) {
+	public function __construct( WikiPageConfigProvider $provider ) {
 		$this->provider = $provider;
 	}
 
