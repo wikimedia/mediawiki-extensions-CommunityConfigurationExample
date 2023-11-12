@@ -27,8 +27,7 @@
 					"CommunityConfigurationExample/src/Schemas/schema_draft-07.json"
 				]
 			},
-			"type": "MediaWiki\\Extension\\CommunityConfiguration\\Provider\\DataConfigurationProvider",
-			"services": []
+			"type": "data"
 		}
 	},
 	"config": {
