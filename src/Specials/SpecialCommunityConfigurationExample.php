@@ -2,17 +2,28 @@
 namespace CommunityConfigurationExample\Specials;
 
 use MediaWiki\Extension\CommunityConfiguration\CommunityConfigurationServices;
+use MediaWiki\Extension\CommunityConfiguration\Provider\ConfigurationProviderFactory;
 use MediaWiki\MediaWikiServices;
 use SpecialPage;
 
 class SpecialCommunityConfigurationExample extends SpecialPage {
-	public function __construct() {
+
+	private ConfigurationProviderFactory $configurationProviderFactory;
+
+	public function __construct(
+		ConfigurationProviderFactory $configurationProviderFactory
+	) {
 		parent::__construct( 'CommunityConfigurationExample' );
+
+		$this->configurationProviderFactory = $configurationProviderFactory;
 	}
 
 	public function execute( $par ) {
-		$ccServices = CommunityConfigurationServices::wrap( MediaWikiServices::getInstance() );
-		$provider = $ccServices->getConfigurationProviderFactory()->newProvider( 'FooBar' );
+		parent::execute( $par );
+
+		$provider = $this->configurationProviderFactory->newProvider( 'FooBar' );
+
+
 
 		$request = $this->getRequest();
 		$output = $this->getOutput();

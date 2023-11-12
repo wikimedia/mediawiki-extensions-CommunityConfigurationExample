@@ -67,7 +67,10 @@
 	},
 	"SpecialPages": {
 		"CommunityConfigurationExample": {
-			"class": "CommunityConfigurationExample\\Specials\\SpecialCommunityConfigurationExample"
+			"class": "CommunityConfigurationExample\\Specials\\SpecialCommunityConfigurationExample",
+			"services": [
+				"CommunityConfiguration.ProviderFactory"
+			]
 		}
 	},
 	"manifest_version": 2
