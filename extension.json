@@ -15,7 +15,7 @@
 	},
 	"CommunityConfigurationProviders": {
 		"FooBar": {
-			"storage": {
+			"store": {
 				"type": "static",
 				"args": [
 					"MediaWiki:SpecialCCExampleConfig.json"
