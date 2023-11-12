@@ -16,9 +16,9 @@
 	"CommunityConfigurationProviders": {
 		"FooBar": {
 			"store": {
-				"type": "static",
+				"type": "wikipage",
 				"args": [
-					"MediaWiki:SpecialCCExampleConfig.json"
+					"MediaWiki:ExampleConfig.json"
 				]
 			},
 			"validator": {
