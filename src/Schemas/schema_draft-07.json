@@ -3,11 +3,10 @@
 	"$id": "http://example.com/communityconfiguration/test/1.0.0",
 	"type": "object",
 	"properties": {
-		"FooBar": {
-			"type": "string",
-			"default": "some default"
+		"CCExampleBackgroundColor": {
+			"type": "string"
 		}
 	},
-	"required": ["FooBar"],
-	"additionalProperties": true
+	"required": ["CCExampleBackgroundColor"],
+	"additionalProperties": false
 }
