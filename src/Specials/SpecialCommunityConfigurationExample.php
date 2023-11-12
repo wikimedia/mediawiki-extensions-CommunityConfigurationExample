@@ -23,15 +23,6 @@ class SpecialCommunityConfigurationExample extends SpecialPage {
 
 		$provider = $this->configurationProviderFactory->newProvider( 'FooBar' );
 
-
-
-		$request = $this->getRequest();
-		$output = $this->getOutput();
-		$this->setHeaders();
-
-		# Get request data from, e.g.
-		$param = $request->getText( 'param' );
-
 		# TODO
 		// Read the current CC state, (validate it?)
 		// $provider->getStore()->loadConfigurationUncached();
@@ -40,7 +31,6 @@ class SpecialCommunityConfigurationExample extends SpecialPage {
 		// Validate and store the new value
 		// REVIEW: Page permissions
 
-		$wikitext = 'Hello world!';
-		$output->addWikiTextAsInterface( $wikitext );
+		$this->getOutput()->addWikiTextAsInterface( 'Hello world!' );
 	}
 }
