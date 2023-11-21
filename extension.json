@@ -10,25 +10,29 @@
 	"requires": {
 		"MediaWiki": ">= 1.42.0"
 	},
+	"attributes": {
+		"CommunityConfiguration": {
+			"Providers": {
+				"FooBar": {
+					"store": {
+						"type": "wikipage",
+						"args": [
+							"MediaWiki:ExampleConfig.json"
+						]
+					},
+					"validator": {
+						"type": "jsonschema",
+						"args": [
+							"CommunityConfigurationExample/src/Schemas/schema_draft-07.json"
+						]
+					},
+					"type": "mw-config"
+				}
+			}
+		}
+	},
 	"AutoloadNamespaces": {
 		"CommunityConfigurationExample\\": "src/"
-	},
-	"CommunityConfigurationProviders": {
-		"FooBar": {
-			"store": {
-				"type": "wikipage",
-				"args": [
-					"MediaWiki:ExampleConfig.json"
-				]
-			},
-			"validator": {
-				"type": "jsonschema",
-				"args": [
-					"CommunityConfigurationExample/src/Schemas/schema_draft-07.json"
-				]
-			},
-			"type": "mw-config"
-		}
 	},
 	"config": {
 	},
