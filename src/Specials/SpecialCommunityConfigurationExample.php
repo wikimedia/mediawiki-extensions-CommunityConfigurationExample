@@ -2,9 +2,6 @@
 namespace CommunityConfigurationExample\Specials;
 
 use CommunityConfigurationExample\Config\WikiPageConfig;
-use MediaWiki\Extension\CommunityConfiguration\CommunityConfigurationServices;
-use MediaWiki\Extension\CommunityConfiguration\Provider\ConfigurationProviderFactory;
-use MediaWiki\MediaWikiServices;
 use SpecialPage;
 
 class SpecialCommunityConfigurationExample extends SpecialPage {
