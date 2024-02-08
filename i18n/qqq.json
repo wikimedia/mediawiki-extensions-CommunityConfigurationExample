@@ -5,5 +5,7 @@
 		]
 	},
 	"communityconfigurationexample": "Extensions's title",
-	"communityconfigurationexample-desc": "{{desc|name=CommunityConfigurationExample|url=https://www.mediawiki.org/wiki/Extension:TBD}}"
+	"communityconfigurationexample-desc": "{{desc|name=CommunityConfigurationExample|url=https://www.mediawiki.org/wiki/Extension:TBD}}",
+	"communityconfiguration-FooBar-title": "Title of the community configuration FooBar provider",
+	"communityconfiguration-FooBar-description": "Description of the community configuration FooBar provider"
 }

@@ -5,5 +5,7 @@
 		]
 	},
 	"communityconfigurationexample": "Community Configuration example",
-	"communityconfigurationexample-desc": "Example of usage of Community Configuration extension"
+	"communityconfigurationexample-desc": "Example of usage of Community Configuration extension",
+	"communityconfiguration-FooBar-title": "CCExample background color",
+	"communityconfiguration-FooBar-description": "Background color picker"
 }
