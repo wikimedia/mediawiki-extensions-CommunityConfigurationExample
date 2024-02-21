@@ -10,8 +10,8 @@ class GrowthNewcomersHomepageSchema implements JsonSchema {
 	public const GEHomepageSuggestedEditsIntroLinks = [
 		self::TYPE => self::TYPE_OBJECT,
 		self::PROPERTIES => [
-			'create' => [ self::TYPE => self::TYPE_STRING ],
-			'image' => [ self::TYPE => self::TYPE_STRING ],
+			'createIntroLink' => [ self::TYPE => self::TYPE_STRING ],
+			'imageIntroLink' => [ self::TYPE => self::TYPE_STRING ],
 		],
 		self::ADDITIONAL_PROPERTIES => false,
 	];

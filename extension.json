@@ -27,6 +27,21 @@
 						]
 					},
 					"type": "mw-config"
+				},
+				"NewcomersHomepage": {
+					"store": {
+						"type": "wikipage",
+						"args": [
+							"MediaWiki:GrowthExperimentsHomepage.json"
+						]
+					},
+					"validator": {
+						"type": "jsonschema",
+						"args": [
+							"CommunityConfigurationExample\\Schemas\\GrowthNewcomersHomepageSchema"
+						]
+					},
+					"type": "mw-config"
 				}
 			}
 		}
