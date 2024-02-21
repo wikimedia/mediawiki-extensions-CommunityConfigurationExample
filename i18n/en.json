@@ -7,5 +7,7 @@
 	"communityconfigurationexample": "Community Configuration example",
 	"communityconfigurationexample-desc": "Example of usage of Community Configuration extension",
 	"communityconfiguration-FooBar-title": "CCExample background color",
-	"communityconfiguration-FooBar-description": "Background color picker"
+	"communityconfiguration-FooBar-description": "Background color picker",
+	"communityconfiguration-newcomershomepage-title": "Newcomer homepage",
+	"communityconfiguration-newcomershomepage-description": "Define what are the Help links that you want new editors to go through."
 }

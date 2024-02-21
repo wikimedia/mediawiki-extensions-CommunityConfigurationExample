@@ -5,7 +5,7 @@ namespace CommunityConfigurationExample\Schemas;
 // phpcs:disable Generic.NamingConventions.UpperCaseConstantName.ClassConstantNotUpperCase
 use MediaWiki\Extension\CommunityConfiguration\Schema\JsonSchema;
 
-class GrowthNewcomersHomepageSchema implements JsonSchema {
+class GrowthNewcomersHomepageSchema extends JsonSchema {
 
 	public const GEHomepageSuggestedEditsIntroLinks = [
 		self::TYPE => self::TYPE_OBJECT,
