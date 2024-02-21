@@ -27,6 +27,27 @@
 						]
 					},
 					"type": "mw-config"
+				},
+				"Mentorship": {
+					"store": {
+						"type": "wikipage",
+						"args": [
+							"MediaWiki:GrowthExperimentsMentorship.json"
+						]
+					},
+					"validator": {
+						"type": "jsonschema",
+						"args": [
+							"CommunityConfigurationExample\\Schemas\\GrowthMentorshipSchema"
+						]
+					},
+					"form": {
+						"type": "jsonform",
+						"args": [
+							"ext.communityConfiguration.GrowthExperiments"
+						]
+					},
+					"type": "mw-config"
 				}
 			}
 		}
@@ -49,15 +70,23 @@
 		"CommunityConfigurationExampleAlias": "CommunityConfigurationExample.alias.php"
 	},
 	"ResourceModules": {
-		"ext.boilerPlate": {
-			"localBasePath": "resources/ext.boilerPlate",
-			"remoteExtPath": "BoilerPlate/resources/ext.boilerPlate",
-			"dependencies": [],
+		"ext.communityConfiguration.GrowthExperiments": {
+			"localBasePath": "resources/ext.communityConfiguration.GrowthExperiments",
+			"remoteExtPath": "BoilerPlate/resources/ext.communityConfiguration.GrowthExperiments",
+			"dependencies": [
+				"vue",
+				"@wikimedia/codex",
+				"ext.communityConfiguration.Editor"
+			],
 			"styles": [],
 			"packageFiles": [
-				"init.js"
+				"index.js",
+				"BooleanYesNoControl.vue"
 			],
-			"messages": []
+			"messages": [
+				"communityconfiguration-growthexperiments-custom-boolean-control-yes",
+				"communityconfiguration-growthexperiments-custom-boolean-control-no"
+			]
 		}
 	},
 	"SpecialPages": {

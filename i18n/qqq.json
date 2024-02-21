@@ -7,5 +7,20 @@
 	"communityconfigurationexample": "Extensions's title",
 	"communityconfigurationexample-desc": "{{desc|name=CommunityConfigurationExample|url=https://www.mediawiki.org/wiki/Extension:TBD}}",
 	"communityconfiguration-FooBar-title": "Title of the community configuration FooBar provider",
-	"communityconfiguration-FooBar-description": "Description of the community configuration FooBar provider"
+	"communityconfiguration-FooBar-description": "Description of the community configuration FooBar provider",
+	"communityconfiguration-Mentorship-title": "{{notranslate}}",
+	"communityconfiguration-Mentorship-description": "{{notranslate}}",
+	"communityconfiguration-mentorship-gementorshipautomaticeligibility-label": "{{notranslate}}",
+	"communityconfiguration-mentorship-gementorshipenabled-label": "{{notranslate}}",
+	"communityconfiguration-mentorship-gementorshipminimumage-label": "{{notranslate}}",
+	"communityconfiguration-mentorship-gementorshipminimumeditcount-label": "{{notranslate}}",
+	"communityconfiguration-mentorship-gepersonalizedpraisedays-label": "{{notranslate}}",
+	"communityconfiguration-mentorship-gepersonalizedpraisedays-help-text": "{{notranslate}}",
+	"communityconfiguration-mentorship-gepersonalizedpraisedefaultnotificationsfrequency-label": "{{notranslate}}",
+	"communityconfiguration-mentorship-gepersonalizedpraisedefaultnotificationsfrequency-help-text": "{{notranslate}}",
+	"communityconfiguration-mentorship-gepersonalizedpraisemaxedits-label": "{{notranslate}}",
+	"communityconfiguration-mentorship-gepersonalizedpraiseminedits-label": "{{notranslate}}",
+	"communityconfiguration-mentorship-gepersonalizedpraiseminedits-help-text": "{{notranslate}}",
+	"communityconfiguration-growthexperiments-custom-boolean-control-yes": "{{notranslate}}",
+	"communityconfiguration-growthexperiments-custom-boolean-control-no": "{{notranslate}}"
 }
