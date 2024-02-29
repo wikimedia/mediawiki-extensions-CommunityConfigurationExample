@@ -23,7 +23,7 @@
 					"validator": {
 						"type": "jsonschema",
 						"args": [
-							"CommunityConfigurationExample/src/Schemas/schema_draft-07.json"
+							"CommunityConfigurationExample\\Schemas\\ExampleSchema"
 						]
 					},
 					"type": "mw-config"
