@@ -2,14 +2,15 @@
 namespace CommunityConfigurationExample\Specials;
 
 use CommunityConfigurationExample\Config\WikiPageConfig;
+use MediaWiki\Config\Config;
 use SpecialPage;
 
 class SpecialCommunityConfigurationExample extends SpecialPage {
 
-	private WikiPageConfig $wikiConfig;
+	private Config $wikiConfig;
 
 	public function __construct(
-		WikiPageConfig $wikiConfig
+		Config $wikiConfig
 	) {
 		parent::__construct( 'CommunityConfigurationExample' );
 

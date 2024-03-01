@@ -64,12 +64,9 @@
 		"CommunityConfigurationExample": {
 			"class": "CommunityConfigurationExample\\Specials\\SpecialCommunityConfigurationExample",
 			"services": [
-				"CommunityConfigurationExample.WikiPageConfig"
+				"CommunityConfiguration.WikiPageConfigReader"
 			]
 		}
 	},
-	"ServiceWiringFiles": [
-		"src/ServiceWiring.php"
-	],
 	"manifest_version": 2
 }
