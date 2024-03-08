@@ -28,6 +28,21 @@
 					},
 					"type": "mw-config"
 				},
+				"HelpPanel": {
+					"store": {
+						"type": "wikipage",
+						"args": [
+							"MediaWiki:GrowthExperimentsHelpPanel.json"
+						]
+					},
+					"validator": {
+						"type": "jsonschema",
+						"args": [
+							"CommunityConfigurationExample\\Schemas\\GrowthHelpPanelSchema"
+						]
+					},
+					"type": "mw-config"
+				},
 				"NewcomersHomepage": {
 					"store": {
 						"type": "wikipage",

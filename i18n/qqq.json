@@ -9,5 +9,15 @@
 	"communityconfiguration-FooBar-title": "Title of the community configuration FooBar provider",
 	"communityconfiguration-FooBar-description": "Description of the community configuration FooBar provider",
 	"communityconfiguration-newcomershomepage-title": "{{notranslate}}",
-	"communityconfiguration-newcomershomepage-description": "{{notranslate}}"
+	"communityconfiguration-newcomershomepage-description": "{{notranslate}}",
+	"communityconfiguration-helppanel-title": "{{notranslate}}",
+	"communityconfiguration-helppanel-description": "{{notranslate}}",
+	"communityconfiguration-helppanel-gehelppanelexcludednamespaces-label": "{{notranslate}}",
+	"communityconfiguration-helppanel-gehelppanelreadingmodenamespaces-label": "{{notranslate}}",
+	"communityconfiguration-helppanel-gehelppanelsearchnamespaces-label": "{{notranslate}}",
+	"communityconfiguration-helppanel-gehelppanelaskmentor-label": "{{notranslate}}",
+	"communityconfiguration-helppanel-gehelppanelhelpdesktitle-label": "{{notranslate}}",
+	"communityconfiguration-helppanel-gehelppanelhelpdeskpostontop-label": "{{notranslate}}",
+	"communityconfiguration-NewcomersHomepage-title": "{{notranslate}}",
+	"communityconfiguration-NewcomersHomepage-description": "{{notranslate}}"
 }
