@@ -41,10 +41,10 @@
 							"CommunityConfigurationExample\\Schemas\\GrowthMentorshipSchema"
 						]
 					},
-					"form": {
-						"type": "jsonform",
+					"editor": {
+						"type": "generic",
 						"args": [
-							"ext.communityConfiguration.GrowthExperiments"
+							"CommunityConfigurationExample\\EditorCapabilities\\GrowthExperimentsEditor"
 						]
 					},
 					"type": "mw-config"
