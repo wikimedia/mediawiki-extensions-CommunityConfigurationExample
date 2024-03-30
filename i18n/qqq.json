@@ -7,5 +7,10 @@
 	"communityconfigurationexample": "Extensions's title",
 	"communityconfigurationexample-desc": "{{desc|name=CommunityConfigurationExample|url=https://www.mediawiki.org/wiki/Extension:TBD}}",
 	"communityconfiguration-foobar-title": "Title of the community configuration FooBar provider",
-	"communityconfiguration-foobar-description": "Description of the community configuration FooBar provider"
+	"communityconfiguration-foobar-description": "Description of the community configuration FooBar provider",
+	"communityconfiguration-foobar-ccexamplebackgroundcolor-label": "Label of a form field in Special:CommunityConfiguration/FooBar",
+	"communityconfiguration-foobar-ccexamplebool-label": "Label of a form field in Special:CommunityConfiguration/FooBar",
+	"communityconfiguration-foobar-ccexamplebool-control-label": "Label of a form field in Special:CommunityConfiguration/FooBar",
+	"communityconfiguration-foobar-ccexamplestring-label": "Label of a form field in Special:CommunityConfiguration/FooBar",
+	"communityconfiguration-foobar-ccexamplenumber-label": "Label of a form field in Special:CommunityConfiguration/FooBar"
 }

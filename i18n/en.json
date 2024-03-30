@@ -7,5 +7,10 @@
 	"communityconfigurationexample": "Community Configuration example",
 	"communityconfigurationexample-desc": "Example of usage of Community Configuration extension",
 	"communityconfiguration-foobar-title": "CCExample background color",
-	"communityconfiguration-foobar-description": "Background color picker"
+	"communityconfiguration-foobar-description": "Background color picker",
+	"communityconfiguration-foobar-ccexamplebackgroundcolor-label": "Background color",
+	"communityconfiguration-foobar-ccexamplebool-label": "Example boolean",
+	"communityconfiguration-foobar-ccexamplebool-control-label": "x",
+	"communityconfiguration-foobar-ccexamplestring-label": "Example string",
+	"communityconfiguration-foobar-ccexamplenumber-label": "Example number"
 }
