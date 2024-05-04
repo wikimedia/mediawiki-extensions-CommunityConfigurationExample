@@ -1,7 +1,6 @@
 <?php
 namespace CommunityConfigurationExample\Specials;
 
-use CommunityConfigurationExample\Config\WikiPageConfig;
 use MediaWiki\Config\Config;
 use SpecialPage;
 
