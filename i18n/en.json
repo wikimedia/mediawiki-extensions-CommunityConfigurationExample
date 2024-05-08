@@ -9,8 +9,11 @@
 	"communityconfiguration-foobar-title": "CCExample background color",
 	"communityconfiguration-foobar-description": "Background color picker",
 	"communityconfiguration-foobar-ccexamplebackgroundcolor-label": "Background color",
+	"communityconfiguration-foobar-ccexamplebackgroundcolor-placeholder": "#FFFFFF",
 	"communityconfiguration-foobar-ccexamplebool-label": "Example boolean",
 	"communityconfiguration-foobar-ccexamplebool-control-label": "x",
 	"communityconfiguration-foobar-ccexamplestring-label": "Example string",
-	"communityconfiguration-foobar-ccexamplenumber-label": "Example number"
+	"communityconfiguration-foobar-ccexamplestring-placeholder": "Lorem Ipsum",
+	"communityconfiguration-foobar-ccexamplenumber-label": "Example number",
+	"communityconfiguration-foobar-ccexamplenumber-placeholder": "42"
 }
