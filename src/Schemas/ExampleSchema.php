@@ -24,4 +24,16 @@ class ExampleSchema extends JsonSchema {
 		self::TYPE => self::TYPE_NUMBER,
 		self::DEFAULT => 0,
 	];
+
+	public const CCExampleEnum = [
+		self::TYPE => self::TYPE_STRING,
+		self::ENUM => [ 'fire', 'water', 'earth', 'air' ],
+		self::DEFAULT => 'earth',
+	];
+
+	public const CCExampleNumberEnum = [
+		self::TYPE => self::TYPE_NUMBER,
+		self::ENUM => [ 1, 6, 7, 9 ],
+		self::DEFAULT => 1,
+	];
 }

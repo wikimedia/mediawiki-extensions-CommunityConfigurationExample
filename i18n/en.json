@@ -12,5 +12,16 @@
 	"communityconfiguration-foobar-ccexamplebool-label": "Example boolean",
 	"communityconfiguration-foobar-ccexamplebool-control-label": "x",
 	"communityconfiguration-foobar-ccexamplestring-label": "Example string",
-	"communityconfiguration-foobar-ccexamplenumber-label": "Example number"
+	"communityconfiguration-foobar-ccexamplenumber-label": "Example number",
+	"communityconfiguration-foobar-ccexampleenum-label": "Pick your element:",
+	"communityconfiguration-foobar-ccexampleenum-option-fire-label": "Fire",
+	"communityconfiguration-foobar-ccexampleenum-option-water-label": "Water",
+	"communityconfiguration-foobar-ccexampleenum-option-earth-label": "Earth",
+	"communityconfiguration-foobar-ccexampleenum-option-air-label": "Air",
+	"communityconfiguration-foobar-ccexamplenumberenum-label": "How many lives do cats have?",
+	"communityconfiguration-foobar-ccexamplenumberenum-option-1-label": "1 live",
+	"communityconfiguration-foobar-ccexamplenumberenum-option-6-label": "6 lives",
+	"communityconfiguration-foobar-ccexamplenumberenum-option-7-label": "7 lives",
+	"communityconfiguration-foobar-ccexamplenumberenum-option-9-label": "9 lives",
+	"communityconfiguration-foobar-ccexamplenumberenum-help-text": "The answer might change depending on your location."
 }
