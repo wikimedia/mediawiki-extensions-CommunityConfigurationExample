@@ -3,6 +3,7 @@
 namespace CommunityConfigurationExample\Schemas;
 
 use MediaWiki\Extension\CommunityConfiguration\Schema\JsonSchema;
+use stdClass;
 
 class ExampleSchema extends JsonSchema {
 	public const CCExampleBackgroundColor = [
@@ -24,6 +25,15 @@ class ExampleSchema extends JsonSchema {
 		self::TYPE => self::TYPE_NUMBER,
 		self::DEFAULT => 0,
 	];
+
+	public const CCExampleObject = [
+		self::TYPE => self::TYPE_OBJECT,
+		self::DYNAMIC_DEFAULT => true,
+	];
+
+	public static function getDefaultCCExampleObject(): stdClass {
+		return (object)[ 'Foo' => 1, 'Bar' => 2 ];
+	}
 
 	public const CCExampleEnum = [
 		self::TYPE => self::TYPE_STRING,
