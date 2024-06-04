@@ -64,7 +64,7 @@
 		"CommunityConfigurationExample": {
 			"class": "CommunityConfigurationExample\\Specials\\SpecialCommunityConfigurationExample",
 			"services": [
-				"CommunityConfiguration.WikiPageConfigReader"
+				"CommunityConfiguration.MediaWikiConfigReader"
 			]
 		}
 	},
