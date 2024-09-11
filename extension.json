@@ -48,18 +48,6 @@
 	"ExtensionMessagesFiles": {
 		"CommunityConfigurationExampleAlias": "CommunityConfigurationExample.alias.php"
 	},
-	"ResourceModules": {
-		"ext.boilerPlate": {
-			"localBasePath": "resources/ext.boilerPlate",
-			"remoteExtPath": "BoilerPlate/resources/ext.boilerPlate",
-			"dependencies": [],
-			"styles": [],
-			"packageFiles": [
-				"init.js"
-			],
-			"messages": []
-		}
-	},
 	"SpecialPages": {
 		"CommunityConfigurationExample": {
 			"class": "CommunityConfigurationExample\\Specials\\SpecialCommunityConfigurationExample",
