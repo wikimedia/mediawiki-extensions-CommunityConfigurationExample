@@ -37,6 +37,9 @@
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\CommunityConfigurationExample\\": "src/"
 	},
+	"TestAutoloadClasses": {
+		"MediaWiki\\Extension\\CommunityConfiguration\\Tests\\SchemaProviderTestCase": "../CommunityConfiguration/tests/phpunit/integration/SchemaProviderTestCase.php"
+	},
 	"MessagesDirs": {
 		"CommunityConfigurationExample": [
 			"i18n"
