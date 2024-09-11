@@ -1,5 +1,11 @@
-## Community Configuration 2.0 Usage Example
+CommunityConfiguration Example
+==============================
 
-The goal of this extension is to provide valid examples of usages of
-the Community Configuration extension. For instructions on how to set
-up, please see https://gitlab.wikimedia.org/repos/growth/community-configuration.
+To see the example in action, add the following to your LocalSettings.php:
+
+```php
+wfLoadExtension( 'CommunityConfigurationExample' );
+```
+
+This will add a new provider on the CommunityConfiguration special page: "Special:CommunityConfiguration/CommunityConfigurationExample",
+and it will add a special page where you can see results of the configuration: "Special:CommunityConfigurationExample".

@@ -8,22 +8,22 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.42.0"
+		"MediaWiki": ">= 1.43.0"
 	},
 	"attributes": {
 		"CommunityConfiguration": {
 			"Providers": {
-				"FooBar": {
+				"CommunityConfigurationExample": {
 					"store": {
 						"type": "wikipage",
 						"args": [
-							"MediaWiki:ExampleConfig.json"
+							"MediaWiki:CommunityConfigurationExample.json"
 						]
 					},
 					"validator": {
 						"type": "jsonschema",
 						"args": [
-							"CommunityConfigurationExample\\Schemas\\ExampleSchema"
+							"MediaWiki\\Extension\\CommunityConfigurationExample\\Config\\Schemas\\ExampleSchema"
 						]
 					},
 					"type": "mw-config"
@@ -32,25 +32,19 @@
 		}
 	},
 	"AutoloadNamespaces": {
-		"CommunityConfigurationExample\\": "src/"
-	},
-	"config": {
-	},
-	"HookHandlers": {
-	},
-	"Hooks": {
+		"MediaWiki\\Extension\\CommunityConfigurationExample\\": "src/"
 	},
 	"MessagesDirs": {
 		"CommunityConfigurationExample": [
 			"i18n"
 		]
 	},
-	"ExtensionMessagesFiles": {
-		"CommunityConfigurationExampleAlias": "CommunityConfigurationExample.alias.php"
+	"TranslationAliasesDirs": {
+		"CommunityConfigurationExample": "i18n/alias"
 	},
 	"SpecialPages": {
 		"CommunityConfigurationExample": {
-			"class": "CommunityConfigurationExample\\Specials\\SpecialCommunityConfigurationExample",
+			"class": "MediaWiki\\Extension\\CommunityConfigurationExample\\Specials\\SpecialCommunityConfigurationExample",
 			"services": [
 				"CommunityConfiguration.MediaWikiConfigReader"
 			]
