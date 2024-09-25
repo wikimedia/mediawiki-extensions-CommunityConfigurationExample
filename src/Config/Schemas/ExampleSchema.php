@@ -5,6 +5,7 @@ declare( strict_types = 1 );
 namespace MediaWiki\Extension\CommunityConfigurationExample\Config\Schemas;
 
 use MediaWiki\Extension\CommunityConfiguration\Schema\JsonSchema;
+use MediaWiki\Extension\CommunityConfiguration\Schemas\MediaWiki\MediaWikiDefinitions;
 
 // phpcs:disable Generic.NamingConventions.UpperCaseConstantName.ClassConstantNotUpperCase
 class ExampleSchema extends JsonSchema {
@@ -58,5 +59,28 @@ class ExampleSchema extends JsonSchema {
 			self::TYPE => self::TYPE_STRING,
 		],
 		self::MAX_ITEMS => 3,
+	];
+
+	public const CCExample_RelevantPages = [
+		self::TYPE => self::TYPE_ARRAY,
+		self::DEFAULT => [],
+		self::ITEMS => [
+			self::TYPE => self::TYPE_OBJECT,
+			self::PROPERTIES => [
+				'title' => [
+					self::REF => [
+						'class' => MediaWikiDefinitions::class,
+						'field' => 'PageTitle',
+					],
+					// TODO: this does not work!
+					self::MIN_LENGTH => 1,
+				],
+				'text' => [
+					self::TYPE => self::TYPE_STRING,
+					self::MIN_LENGTH => 1,
+				],
+			],
+			self::REQUIRED => [ 'title', 'text' ],
+		],
 	];
 }

@@ -39,5 +39,9 @@
 	"communityconfiguration-communityconfigurationexample-ccexample_favoritecolors-option-teal-label": "Teal",
 	"communityconfiguration-communityconfigurationexample-ccexample_favoritecolors-option-midnightblue-label": "Midnight Blue",
 	"communityconfiguration-communityconfigurationexample-ccexample_favoritecolors-option-rebeccapurple-label": "Rebecca Purple",
-	"communityconfiguration-communityconfigurationexample-ccexample_favoritecolors-option-navajowhite-label": "Navajo White"
+	"communityconfiguration-communityconfigurationexample-ccexample_favoritecolors-option-navajowhite-label": "Navajo White",
+	"communityconfiguration-communityconfigurationexample-ccexample_relevantpages-label": "Relevant pages",
+	"communityconfiguration-communityconfigurationexample-ccexample_relevantpages-title-label": "Title",
+	"communityconfiguration-communityconfigurationexample-ccexample_relevantpages-text-label": "Link text",
+	"communityconfiguration-communityconfigurationexample-ccexample_relevantpages-item-label": "$1. Page"
 }

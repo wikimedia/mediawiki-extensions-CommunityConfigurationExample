@@ -39,6 +39,7 @@ class SpecialCommunityConfigurationExample extends SpecialPage {
 		}
 		$this->showNumbersFromObject( 'CCExample_Numbers' );
 		$this->showMultiselectEnumConfig();
+		$this->showLinks();
 	}
 
 	private function showStringConfig( string $configName ): void {
@@ -67,6 +68,18 @@ class SpecialCommunityConfigurationExample extends SpecialPage {
 			$this->getOutput()->addWikiTextAsInterface(
 				$configName . ' ' . $fieldName . ': ' . $exampleNumberObject->{$fieldName}
 			);
+		}
+	}
+
+	private function showLinks(): void {
+		$configuredPages = $this->wikiConfig->get( 'CCExample_RelevantPages' );
+		if ( count( $configuredPages ) === 0 ) {
+			$this->getOutput()->addWikiTextAsInterface( 'No relevant pages configured.' );
+			return;
+		}
+		$this->getOutput()->addWikiTextAsInterface( '==== Relevant pages: ====' );
+		foreach ( $configuredPages as $page ) {
+			$this->getOutput()->addWikiTextAsInterface( '# [[' . $page->title . '|' . $page->text . ']]' );
 		}
 	}
 
