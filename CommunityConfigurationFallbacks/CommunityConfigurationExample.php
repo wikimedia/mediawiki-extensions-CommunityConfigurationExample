@@ -2,7 +2,6 @@
 // phpcs:ignoreFile
 // This file was automatically generated. Please update it via extensions/CommunityConfiguration/UpdateEmergencyDefaults.php maintenance script
 return (object) array(
-   'CCExample_OnOff' => false,
    'CCExample_String' => '',
    'CCExample_Numbers' => 
   (object) array(
