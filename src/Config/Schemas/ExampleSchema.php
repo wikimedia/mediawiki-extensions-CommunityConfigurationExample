@@ -6,18 +6,10 @@ namespace MediaWiki\Extension\CommunityConfigurationExample\Config\Schemas;
 
 use MediaWiki\Extension\CommunityConfiguration\Schema\JsonSchema;
 use MediaWiki\Extension\CommunityConfiguration\Schemas\MediaWiki\MediaWikiDefinitions;
-use MediaWiki\Extension\CommunityConfigurationExample\Config\Schemas\Converters\ExampleSchema_Converter_1_1_0;
 
 // phpcs:disable Generic.NamingConventions.UpperCaseConstantName.ClassConstantNotUpperCase
 class ExampleSchema extends JsonSchema {
-	public const VERSION = '1.1.0';
-	public const SCHEMA_PREVIOUS_VERSION = '1.0.0';
-	public const SCHEMA_CONVERTER = ExampleSchema_Converter_1_1_0::class;
-
-	public const CCExample_OnOff = [
-		self::TYPE => self::TYPE_BOOLEAN,
-		self::DEFAULT => false,
-	];
+	public const VERSION = '1.0.0';
 
 	public const CCExample_String = [
 		self::TYPE => self::TYPE_STRING,
