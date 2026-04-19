@@ -5,7 +5,7 @@ declare( strict_types = 1 );
 namespace MediaWiki\Extension\CommunityConfigurationExample\Specials;
 
 use MediaWiki\Config\Config;
-use SpecialPage;
+use MediaWiki\SpecialPage\SpecialPage;
 
 class SpecialCommunityConfigurationExample extends SpecialPage {
 
