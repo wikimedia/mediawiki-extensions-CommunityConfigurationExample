@@ -7,12 +7,14 @@ namespace MediaWiki\Extension\CommunityConfigurationExample\Config\Schemas;
 use MediaWiki\Extension\CommunityConfiguration\Schema\JsonSchema;
 use MediaWiki\Extension\CommunityConfiguration\Schemas\MediaWiki\MediaWikiDefinitions;
 use MediaWiki\Extension\CommunityConfigurationExample\Config\Schemas\Converters\ExampleSchema_Converter_1_1_0;
+use MediaWiki\Extension\CommunityConfigurationExample\Config\Schemas\UI\ExampleUISchema;
 
 // phpcs:disable Generic.NamingConventions.UpperCaseConstantName.ClassConstantNotUpperCase
 class ExampleSchema extends JsonSchema {
 	public const VERSION = '1.1.0';
 	public const SCHEMA_PREVIOUS_VERSION = '1.0.0';
 	public const SCHEMA_CONVERTER = ExampleSchema_Converter_1_1_0::class;
+	public const UI_SCHEMA = ExampleUISchema::class;
 
 	public const CCExample_OnOff = [
 		self::TYPE => self::TYPE_BOOLEAN,
@@ -90,5 +92,20 @@ class ExampleSchema extends JsonSchema {
 			],
 			self::REQUIRED => [ 'title', 'text' ],
 		],
+	];
+
+	public const CCExample_CustomControl = [
+		self::TYPE => self::TYPE_INTEGER,
+		self::DEFAULT => 0,
+	];
+
+	public const CCExample_ValueA = [
+		self::TYPE => self::TYPE_INTEGER,
+		self::DEFAULT => 0,
+	];
+
+	public const CCExample_ValueB = [
+		self::TYPE => self::TYPE_STRING,
+		self::DEFAULT => '',
 	];
 }

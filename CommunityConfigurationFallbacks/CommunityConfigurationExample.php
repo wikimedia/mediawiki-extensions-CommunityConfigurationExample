@@ -15,4 +15,7 @@ return (object) array(
    'CCExample_RelevantPages' => 
   array (
   ),
+   'CCExample_CustomControl' => 0,
+   'CCExample_ValueA' => 0,
+   'CCExample_ValueB' => '',
 );

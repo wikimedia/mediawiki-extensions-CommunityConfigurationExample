@@ -46,5 +46,9 @@
 	"communityconfiguration-communityconfigurationexample-ccexample_relevantpages-label": "Relevant pages",
 	"communityconfiguration-communityconfigurationexample-ccexample_relevantpages-title-label": "Title",
 	"communityconfiguration-communityconfigurationexample-ccexample_relevantpages-text-label": "Link text",
-	"communityconfiguration-communityconfigurationexample-ccexample_relevantpages-item-label": "$1. Page"
+	"communityconfiguration-communityconfigurationexample-ccexample_relevantpages-item-label": "$1. Page",
+	"communityconfiguration-communityconfigurationexample-example-group-section-label": "Example group",
+	"communityconfiguration-communityconfigurationexample-example-group-section-description": "Those two values are related",
+	"communityconfiguration-communityconfigurationexample-ccexample_valuea-label": "Value A",
+	"communityconfiguration-communityconfigurationexample-ccexample_valueb-label": "Value B"
 }

@@ -15,6 +15,12 @@
 	},
 	"attributes": {
 		"CommunityConfiguration": {
+			"Controls": {
+				"CommunityConfigurationExample.StaticControl": {
+					"module": "ext.communityConfigurationExample.staticControl",
+					"component": "StaticControl"
+				}
+			},
 			"Providers": {
 				"CommunityConfigurationExample": {
 					"store": {
@@ -50,6 +56,22 @@
 			"class": "MediaWiki\\Extension\\CommunityConfigurationExample\\Specials\\SpecialCommunityConfigurationExample",
 			"services": [
 				"CommunityConfiguration.MediaWikiConfigReader"
+			]
+		}
+	},
+	"ResourceModules": {
+		"ext.communityConfigurationExample.staticControl": {
+			"class": "MediaWiki\\ResourceLoader\\CodexModule",
+			"codexComponents": [ "CdxLabel" ],
+			"localBasePath": "modules/ext.communityConfigurationExample.staticControl",
+			"remoteExtPath": "CommunityConfigurationExample/modules/ext.communityConfigurationExample.staticControl",
+			"packageFiles": [
+				"index.js",
+				"StaticControl.vue"
+			],
+			"dependencies": [
+				"vue",
+				"ext.communityConfiguration.Editor.controls"
 			]
 		}
 	},
