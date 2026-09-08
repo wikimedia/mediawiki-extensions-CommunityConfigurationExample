@@ -16,6 +16,9 @@ class ExampleSchema_Converter_1_1_0 implements ISchemaConverter {
 		} else {
 			$data->CCExample_OnOff = false;
 		}
+		$data->CCExample_CustomControl = 0;
+		$data->CCExample_ValueA = 0;
+		$data->CCExample_ValueB = '';
 		return $data;
 	}
 
@@ -25,6 +28,11 @@ class ExampleSchema_Converter_1_1_0 implements ISchemaConverter {
 		} else {
 			$data->CCExample_OnOff = 'off';
 		}
+		unset(
+			$data->CCExample_CustomControl,
+			$data->CCExample_ValueA,
+			$data->CCExample_ValueB
+		);
 		return $data;
 	}
 }
