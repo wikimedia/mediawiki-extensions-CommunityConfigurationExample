@@ -19,8 +19,8 @@ class ExampleUISchema extends UISchema {
 				self::TYPE => self::TYPE_GROUP,
 				self::LABEL => 'example-group',
 				self::ELEMENTS => [
-					'#/properties/CCExample_ValueA',
-					'#/properties/CCExample_ValueB',
+					'#/properties/CCExample_ValueC',
+					'#/properties/CCExample_Values',
 				],
 			],
 		],

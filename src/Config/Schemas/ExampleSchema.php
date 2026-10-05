@@ -6,14 +6,14 @@ namespace MediaWiki\Extension\CommunityConfigurationExample\Config\Schemas;
 
 use MediaWiki\Extension\CommunityConfiguration\Schema\JsonSchema;
 use MediaWiki\Extension\CommunityConfiguration\Schemas\MediaWiki\MediaWikiDefinitions;
-use MediaWiki\Extension\CommunityConfigurationExample\Config\Schemas\Converters\ExampleSchema_Converter_1_1_0;
+use MediaWiki\Extension\CommunityConfigurationExample\Config\Schemas\Converters\ExampleSchema_Converter_1_2_0;
 use MediaWiki\Extension\CommunityConfigurationExample\Config\Schemas\UI\ExampleUISchema;
 
 // phpcs:disable Generic.NamingConventions.UpperCaseConstantName.ClassConstantNotUpperCase
 class ExampleSchema extends JsonSchema {
-	public const VERSION = '1.1.0';
-	public const SCHEMA_PREVIOUS_VERSION = '1.0.0';
-	public const SCHEMA_CONVERTER = ExampleSchema_Converter_1_1_0::class;
+	public const VERSION = '1.2.0';
+	public const SCHEMA_PREVIOUS_VERSION = '1.1.0';
+	public const SCHEMA_CONVERTER = ExampleSchema_Converter_1_2_0::class;
 	public const UI_SCHEMA = ExampleUISchema::class;
 
 	public const CCExample_OnOff = [
@@ -99,12 +99,21 @@ class ExampleSchema extends JsonSchema {
 		self::DEFAULT => 0,
 	];
 
-	public const CCExample_ValueA = [
-		self::TYPE => self::TYPE_INTEGER,
-		self::DEFAULT => 0,
+	public const CCExample_Values = [
+		self::TYPE => self::TYPE_OBJECT,
+		self::PROPERTIES => [
+			'a' => [
+				self::TYPE => self::TYPE_INTEGER,
+				self::DEFAULT => 0,
+			],
+			'b' => [
+				self::TYPE => self::TYPE_STRING,
+				self::DEFAULT => '',
+			],
+		],
 	];
 
-	public const CCExample_ValueB = [
+	public const CCExample_ValueC = [
 		self::TYPE => self::TYPE_STRING,
 		self::DEFAULT => '',
 	];

@@ -16,6 +16,10 @@ return (object) array(
   array (
   ),
    'CCExample_CustomControl' => 0,
-   'CCExample_ValueA' => 0,
-   'CCExample_ValueB' => '',
+   'CCExample_Values' => 
+  (object) array(
+     'a' => 0,
+     'b' => '',
+  ),
+   'CCExample_ValueC' => '',
 );
