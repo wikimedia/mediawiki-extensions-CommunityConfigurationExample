@@ -8,7 +8,7 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.47.0",
+		"MediaWiki": ">= 1.48.0",
 		"extensions": {
 			"CommunityConfiguration": "*"
 		}
@@ -65,7 +65,9 @@
 	"ResourceModules": {
 		"ext.communityConfigurationExample.staticControl": {
 			"class": "MediaWiki\\ResourceLoader\\CodexModule",
-			"codexComponents": [ "CdxLabel" ],
+			"codexComponents": [
+				"CdxLabel"
+			],
 			"localBasePath": "modules/ext.communityConfigurationExample.staticControl",
 			"remoteExtPath": "CommunityConfigurationExample/modules/ext.communityConfigurationExample.staticControl",
 			"packageFiles": [
